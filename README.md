@@ -13,9 +13,9 @@ For more information please visit this [blog post](https://itm4n.github.io/cdpsv
 ## How to compile 
 
 1) Open Visual Studio and create a new __C++ Console Application__ project.  
-2) Delete the existing source file and add __cdpsgshims.cpp__ to the project.  
-3) Select __Release__ and __x86/x64__ depending on the architecture of the target machine.  
-4) Open __Project__ > __Properties__.  
+2) Replace the content of the main source file with the content of __cdpsgshims.cpp__.  
+3) Select __Release__ and __x86__/__x64__ depending on the architecture of the target machine.  
+4) Open __Project__ > __Properties__ (and make sure the selected platform - __Win32__/__x64__ - is correct)   
     - __General__ > __Configuration Type__ -> `Dynamic Library (.dll)`  
     - __C/C++__ > __Code Generation__ > __Runtime Library__ -> `Multithread (/MT)`  
 5) __Build solution__  
