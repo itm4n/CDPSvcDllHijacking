@@ -9,6 +9,7 @@
 
 For more information please visit this [blog post](https://itm4n.github.io/cdpsvc-dll-hijacking/).
 
+/!\ __This technique works only if the target machine has less than 3.5GB of RAM__! Otherwise each service runs in a separate process and the Token Kidnapping technique is therefore useless.
 
 ## How to compile 
 
